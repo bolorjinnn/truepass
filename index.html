@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.17.0/font/bootstrap-icons.min.css">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="password">
+        <h1>Password validation</h1>
+        <input type="password" id="password" placeholder="password" oninput="check()">
+        <br>
+        <div class="set">
+            <div class="count">Length :</div>
+            <i id="see" onclick="check()" class="bi bi-eye-fill"></i>
+        </div>
+        <p>Password must contain</p>
+        <div class="check0">
+            <i id="checkIcon0" class="bi bi-check-circle"></i> <span id="checkMessage0">At least 10 Characters long</span>
+        </div>
+        <div class="check1">
+            <i id="checkIcon1" class="bi bi-check-circle"></i> <span id="checkMessage1">At least 1 lowercase letter (a, b, ... z)</span>
+        </div>
+        <div class="check2">
+            <i id="checkIcon2" class="bi bi-check-circle"></i> <span id="checkMessage2">At least 1 Number (0, 1, 2, ... 9)</span>
+        </div>
+        <div class="check3">
+            <i id="checkIcon3" class="bi bi-check-circle"></i> <span id="checkMessage3">At least 1 UpperCase letter (A, B, ... Z)</span>
+        </div>
+        <div class="check4">
+            <i id="checkIcon4" class="bi bi-check-circle"></i> <span id="checkMessage4">At least 1 special symbol (!, @, ... $)</span>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
